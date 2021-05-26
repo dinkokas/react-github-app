@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  background-color: rgb(243, 243, 243);
+}
+
+nav {
+  display: flex;
+  flex-basis: 5%;
+  background-color: rgb(73, 79, 82);
+  color: white;
+  div {
+    padding: 15px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.nav-links {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+.searchPage {
+  display: flex;
+  flex-basis: 97.5%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.searchBar {
+  background-color: rgb(247, 235, 235);
+  width: 30vh;
+  height: 17.5vw;
+  align-items: center;
+  margin: 250px;
+  padding: 25px;
+}
+
+.formLabel {
+  font-size: 24px;
+}
+
+.result {
+  background-color: rgb(247, 235, 235);
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  padding: 20px;
+  margin: 20px 0 10px 0;
+  img {
+    width: 120px;
+  }
+  .userData {
+    display: flex;
+    flex-direction: row;
+    div:nth-child(2) {
+      padding: 10px;
+    }
+    h3 {
+      font-size: 28px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+  .repoData {
+    padding: 10px;
+    li {
+      font-size: 14px;
+    }
+  }
+}
+
+.backButton {
+  padding: 20px;
+}
+
+footer {
+  flex-basis: 2.5%;
+  background-color: rgb(243, 243, 243);
+  text-align: center;
+  div {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
